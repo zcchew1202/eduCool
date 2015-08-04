@@ -1,6 +1,6 @@
 # LearnX webapp prototype
 
-An ambitious webapp which is trying to revolutionize the way today's youth learn. Built with:
+A prototype (still in progress) of an ambitious webapp which is trying to revolutionize the way today's youth learn. Built with:
 - AngularJS: https://angularjs.org/
 - Sails.js: http://sailsjs.org/
 - Node.js: https://nodejs.org/
