@@ -1,0 +1,58 @@
+{
+  "data": {
+    "user": [
+      {
+        "name": "Nikola Tesla",
+        "title": "Mr",
+        "email": "nikola@tesla.com",
+        "encryptedPassword": "$2a$10$EDZGr25lqi2TPgxS6FcK2ekVkIdn/Ec2b216lkhlq3xKmXqTpfNlW",
+        "lastLoggedIn": "2015-08-04T09:28:41.724Z",
+        "gravatarUrl": "http://www.gravatar.com/avatar/afb8be8ba2df92afcbda19c537435a5f?",
+        "createdAt": "2015-08-04T09:28:41.777Z",
+        "updatedAt": "2015-08-04T09:28:41.777Z",
+        "id": 1
+      }
+    ]
+  },
+  "schema": {
+    "user": {
+      "name": {
+        "type": "string"
+      },
+      "title": {
+        "type": "string"
+      },
+      "email": {
+        "type": "string",
+        "unique": true
+      },
+      "encryptedPassword": {
+        "type": "string"
+      },
+      "lastLoggedIn": {
+        "type": "date",
+        "defaultsTo": "1970-01-01T00:00:00.000Z"
+      },
+      "gravatarUrl": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "user": {
+      "id": 1
+    }
+  }
+}
