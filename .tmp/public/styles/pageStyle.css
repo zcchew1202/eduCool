@@ -1,3 +1,4 @@
+
 h1{
 	color: #FFF;
 }
@@ -5,6 +6,9 @@ body{
 	background-color: black;
 }
 
-
+.fade.ng-hide {
+  transition:1.0s linear all;
+  opacity:0;
+}
 
 
