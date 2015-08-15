@@ -33,7 +33,7 @@
         <span class="icon-bar"></span>
         </button>
         <!-- This is the brand on the left-hand side. -->
-        <a class="navbar-brand" href="/#/"> activityOverlord</a>
+        <a class="navbar-brand" href="/#/"> Learn{x}</a>
         <!-- This is what is the above collapse button points to when the mark-up below is collapsed -->
         <div class="collapse navbar-collapse" ng-class="!navCollapsed && 'in'">
           <!-- This is what "styles" the li's as navbar items -->
@@ -55,28 +55,89 @@
 
 
       <h1>This is the Dashboard</h1>
-<div class="uk-cover-background uk-position-relative">
-    <img src="http://i.ytimg.com/vi/qbzFSfWwp-w/maxresdefault.jpg" width="" height="" alt="">
-    <div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-flex-column">
-    <button ng-init="showVideo = false" ng-click="showVideo = !showVideo" class="uk-animation-fade">Profile pic</button>
-      <div ng-show="showVideo" class="uk-animation-fade fade">
-
-      <a href="https://www.youtube.com/watch?v=Qcv1IqHWAzg" data-lightbox-type="image" data-uk-lightbox title="Stable marriage">
-      <div class="uk-animation-scale uk-animation-reverse uk-animation-hover">
-        <img id="stableMarriage1" class="uk-border-rounded" src="http://img.youtube.com/vi/Qcv1IqHWAzg/default.jpg">
-      </div>
-      </a>
-
-      <a href="https://www.youtube.com/watch?v=LtTV6rIxhdo" data-lightbox-type="image" data-uk-lightbox title="Stable marriage 2">
-      <div class="uk-animation-scale uk-animation-reverse uk-animation-hover"> 
-        <img id="stableMarriage2" class="uk-border-rounded" src="http://img.youtube.com/vi/LtTV6rIxhdo/default.jpg">
-      </div>
-      </a>
-      </div>
+      
+       
+      <div class="uk-width-small-1-3 uk-container-center">
+      <button ng-init="showVideo = false" ng-click="showVideo = !showVideo" class="uk-animation-fade">Profile pic</button>
+       <div ng-show="showVideo" class="uk-animation-fade fade uk-grid uk-grid-width-1-2">
+<ul class="uk-sortable uk-list uk-list-space" data-uk-sortable="{group:'group1'}">
+<li>   
+<div class="uk-grid">
+<div class="uk-width-small-1-2">
+<div class="uk-panel uk-panel-box uk-animation-scale uk-animation-reverse uk-animation-hover">
+     <h3 class="uk-handle">Stable marriage 1</h3>
+    <a href="https://www.youtube.com/watch?v=Qcv1IqHWAzg"  title="stable marriage 1" data-uk-lightbox="{group:'group1'}">
+      <img src="http://img.youtube.com/vi/Qcv1IqHWAzg/default.jpg" width="200" height="150" alt="">
+    </a>
+</div>
+</div>
+</div>
+</li>
+  <li>
+<div class="uk-grid">
+<div class="uk-width-small-1-2">
+  <div class="uk-panel uk-panel-box uk-animation-scale uk-animation-reverse uk-animation-hover">
+      <h3 class="uk-handle">Stable marriage 2</h3>
+    <a href="https://www.youtube.com/watch?v=LtTV6rIxhdo" data-uk-lightbox="{group:'group1'}" title="">
+      <img src="http://img.youtube.com/vi/LtTV6rIxhdo/default.jpg" width="200" height="150" alt="">
+    </a>
     </div>
+  </div>
+</div>
+</li>
+ 
+</ul>
 
+<ul class="uk-sortable uk-list uk-list-space" data-uk-sortable="{group:'group1'}">
+<li>
+<div class="uk-grid">
+<div class="uk-width-small-1-2">
+<div class="uk-panel uk-panel-box">
+     <h3 class="uk-handle">Move</h3>
+    <a href="http://getuikit.com/docs/images/placeholder_800x600_1.jpg"  title="" data-uk-lightbox="{group:'group1'}">
+      <img src="http://getuikit.com/docs/images/placeholder_200x150_1.svg" width="200" height="150" alt="">
+    </a>
+</div>
+</li>
+  <li>
+  <div class="uk-grid">
+<div class="uk-width-small-1-2">
+  <div class="uk-panel uk-panel-box">
+      <h3 class="uk-handle">Move</h3>
+    <a href="http://getuikit.com/docs/images/placeholder_800x600_2.jpg" data-uk-lightbox="{group:'group1'}" title="">
+      <img src="http://getuikit.com/docs/images/placeholder_200x150_2.svg" width="200" height="150" alt="">
+    </a>
+    </div>
+</li>
+  <li>
+  <div class="uk-grid">
+<div class="uk-width-small-1-2">
+<div class="uk-panel uk-panel-box">
+     <h3 class="uk-handle">Move</h3>
+    <a href="http://getuikit.com/docs/images/placeholder_800x600_3.jpg" data-uk-lightbox="{group:'group1'}" title="">
+      <img src="http://getuikit.com/docs/images/placeholder_200x150_3.svg" width="200" height="150" alt="">
+    </a>
+    </div>
+</li>
+  <li>
+  <div class="uk-grid">
+<div class="uk-width-small-1-2">
+<div class="uk-panel uk-panel-box">
+      <h3 class="uk-handle">Move</h3>
+    <a href="http://getuikit.com/docs/images/placeholder_800x600_4.jpg" data-uk-lightbox="{group:'group1'}" title="">
+      <img src="http://getuikit.com/docs/images/placeholder_200x150_4.svg" width="200" height="150" alt="">
+    </a>
+    </div>
+</li>
+</ul>
+</div>
 
 </div>
+</div>
+
+
+
+
       
   
 
@@ -94,6 +155,7 @@
     <script src="/js/dependencies/interact.min.js"></script>
     <script src="/js/dependencies/lightbox.min.js"></script>
     <script src="/js/dependencies/modal.js"></script>
+    <script src="/js/dependencies/sortable.js"></script>
     <script src="/js/dependencies/utility.js"></script>
     <script src="/js/public/signup/SignupModule.js"></script>
     <script src="/js/private/dashboard/DashboardModule.js"></script>

@@ -1,14 +1,24 @@
-
+html { 
+  background: url(http://i.ytimg.com/vi/qbzFSfWwp-w/maxresdefault.jpg) no-repeat center center fixed !important; 
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
 h1{
 	color: #FFF;
 }
 body{
-	background-color: black;
+	background: url(http://i.ytimg.com/vi/qbzFSfWwp-w/maxresdefault.jpg) no-repeat center center fixed !important;
 }
 
 .fade.ng-hide {
   transition:1.0s linear all;
   opacity:0;
+}
+
+.uk-panel-box{
+	background: black !important;
 }
 
 
