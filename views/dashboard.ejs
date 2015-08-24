@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Activity Overlord | Welcome back, <%= me.name %>!</title>
+    <title>Learn{x} | Welcome back, <%= me.name %>!</title>
     <!-- Viewport mobile tag for sensible mobile support -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!--STYLES-->
@@ -56,18 +56,18 @@
 
       <h1>My Dashboard</h1>
       
-       
+     <js-plumb-canvas on-connection="onConnection" x="pos_x" y="pos_y" zoom="zoomlevel">
       <div class="uk-width-small-1-3 uk-container-center uk-animation-fade">
       <div class="uk-grid">
       <div class="uk-width-small-1-4">
-      <div class="uk-panel uk-panel-box uk-animation-scale uk-animation-reverse uk-animation-hover">
+      <div id="Profile" class="uk-panel uk-panel-box uk-animation-scale uk-animation-reverse uk-animation-hover">
       <h1 class="uk-panel-title"><%= me.name %></h1>
-      <img src="<%= me.gravatarUrl %>" ng-init="expandProfile = false" ng-click="expandProfile = !expandProfile" class="uk-animation-fade" alt="Profile pic">
-      <button class="uk-button-primary uk-animation-fade" type="button" ng-show="expandProfile" ng-init="showVideo = false" ng-click="showVideo = !showVideo" class="uk-animation-fade">Show/hide PlayGraphs</button>
+      <img src="<%= me.gravatarUrl %>"  ng-click="expandProfile = !expandProfile; drawLines(expandProfile)" class="uk-animation-fade" alt="Profile pic">
+      <button class="uk-button-primary uk-animation-fade" type="button" ng-show="expandProfile" ng-click="showVideo = !showVideo" class="uk-animation-fade">Show/hide PlayGraphs</button>
       </div>
       </div>
-      <div ng-show="expandProfile" class="uk-width-small-1-4 uk-animation-fade">
-        <div class="uk-panel uk-panel-box uk-animation-scale uk-animation-reverse uk-animation-hover">
+      <div  ng-show="expandProfile" class="uk-width-small-1-4 uk-animation-fade">
+        <div id="Friends" class="uk-panel uk-panel-box uk-animation-scale uk-animation-reverse uk-animation-hover">
         <h1 class="uk-panel-title">Friends</h1>
       </div>
       </div>
@@ -75,7 +75,7 @@
 
       
        <div ng-show="showVideo" class="uk-animation-fade uk-grid uk-grid-width-1-2">
-<ul class="uk-sortable uk-list uk-list-space" data-uk-sortable="{group:'group1'}">
+<ul id="Main" class="uk-sortable uk-list uk-list-space" data-uk-sortable="{group:'group1'}">
 <li>   
 <div class="uk-grid">
 <div class="uk-width-small-1-2">
@@ -148,6 +148,7 @@
 </div>
 
 </div>
+</js-plumb-canvas>
 </div>
 
 
@@ -166,8 +167,12 @@
     <script src="/js/dependencies/uikit.min.js"></script>
     <script src="/js/dependencies/angular-toastr.js"></script>
     <script src="/js/dependencies/compareTo.module.js"></script>
+    <script src="/js/dependencies/default-katavorio-helper.js"></script>
+    <script src="/js/dependencies/dom.jsPlumb-1.7.6-min.js"></script>
     <script src="/js/dependencies/drawLines.js"></script>
     <script src="/js/dependencies/interact.min.js"></script>
+    <script src="/js/dependencies/jsPlumbdirectives.js"></script>
+    <script src="/js/dependencies/katavorio-0.7.js"></script>
     <script src="/js/dependencies/lightbox.min.js"></script>
     <script src="/js/dependencies/modal.js"></script>
     <script src="/js/dependencies/sortable.js"></script>
