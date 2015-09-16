@@ -11,6 +11,17 @@
         "createdAt": "2015-08-04T09:28:41.777Z",
         "updatedAt": "2015-08-04T09:28:41.777Z",
         "id": 1
+      },
+      {
+        "name": "zbc",
+        "title": "mr",
+        "email": "abc@abc.com",
+        "encryptedPassword": "$2a$10$rVOr00P1cleHHFbqmIiMqOyGiAp8Sdvv3BmRWrPPBAqyhwtltixgC",
+        "lastLoggedIn": "2015-09-16T04:10:50.680Z",
+        "gravatarUrl": "http://www.gravatar.com/avatar/4adcca49b3b1e5a08ac202f5d5a9e688?",
+        "createdAt": "2015-09-16T04:10:50.708Z",
+        "updatedAt": "2015-09-16T04:10:50.708Z",
+        "id": 2
       }
     ]
   },
@@ -52,7 +63,7 @@
   },
   "counters": {
     "user": {
-      "id": 1
+      "id": 2
     }
   }
 }
