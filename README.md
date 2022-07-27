@@ -1,4 +1,4 @@
-# LearnX webapp prototype
+# Learn{X} webapp prototype
 
 A prototype (still in progress) of an ambitious webapp which is trying to revolutionize the way today's youth learn. Built with:
 - AngularJS: https://angularjs.org/
